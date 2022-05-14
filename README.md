@@ -1,0 +1,3 @@
+# Python_basic_syntax
+Python基础语法学习过程中的一些代码
+，与一些使用Python的小技巧

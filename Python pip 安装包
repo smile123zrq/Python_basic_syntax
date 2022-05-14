@@ -1,0 +1,37 @@
+安装命令：
+pip install <包名>   #网络上安装包
+pip install -r requirements.txt     # 本地安装，指定路径
+
+常见国内镜像源：
+http://pypi.douban.com/simple/ 豆瓣
+http://mirrors.aliyun.com/pypi/simple/ 阿里
+http://pypi.hustunique.com/simple/ 华中理工大学
+http://pypi.sdutlinux.org/simple/ 山东理工大学
+http://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学
+换源安装包：
+pip install -i https://pypi.doubanio.com/simple/ Django
+pip install -i https://pypi.doubanio.com/simple/ --trusted-host pypi.doubanio.com Djang
+-i https://pypi.doubanio.com/simple/   ------表示使用豆瓣源 （-i == --index-url）
+--trusted-host pypi.doubanio.com       --------表示添加信任
+
+
+安装时指定版本：
+pip install SomePackage              # 最新版本
+pip install SomePackage==1.0.4       # 指定版本
+pip install 'SomePackage>=1.0.4'     # 最小版本
+
+卸载安装包：
+pip uninstall <包名>
+pip uninstall -r requirements.txt
+
+升级包：
+pip install -U <包名>
+pip install <包名> --upgrade
+
+列出当前已经安装的包：
+list    # 列出当前已经安装的包
+pip list -o     # 查询可升级的包
+
+显示包所在目录及信息：
+pip show <包名>
+
